@@ -1,0 +1,23 @@
+version: "3.9"
+
+services:
+  web:
+    build:
+      context: ./services/web-service
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+
+  download:
+    build:
+      context: ./services/download-service
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+
+  proxy:
+    build:
+      context: ./services/proxy-service
+      dockerfile: Dockerfile
+    ports:
+      - "8080:5000"

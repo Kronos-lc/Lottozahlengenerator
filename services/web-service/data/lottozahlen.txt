@@ -1,0 +1,2 @@
+Hauptzahlen: 6, 12, 20, 33, 45, 48
+Superzahl: 5
